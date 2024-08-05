@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Messages</title>
+</head>
+<body>
+    <h2>Stored Messages</h2>
+    <ul>
+        {% for message in messages %}
+            <li>
+                <strong>Name:</strong> {{ message.first_name }} {{ message.last_name }} <br>
+                <strong>Email:</strong> {{ message.email }} <br>
+                <strong>Message:</strong> {{ message.message }}
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
